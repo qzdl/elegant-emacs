@@ -273,6 +273,7 @@ background color that is barely perceptible."
     (with-eval-after-load 'cus-edit (set-button-faces)))
 
 ;; Dark theme
+;; https://www.colorcodehex.com/html-color-picker.html
 (defun elegance-dark ()
     (setq frame-background-mode 'dark)
     (set-background-color "#3f3f3f")
@@ -287,7 +288,7 @@ background color that is barely perceptible."
                                          :weight 'regular)
     (set-face-attribute 'face-salient nil :foreground "#dca3a3"
                                           :weight 'light)
-    (set-face-attribute 'face-faded nil :foreground "#777767"
+    (set-face-attribute 'face-faded nil :foreground "#B0A7AE"
                                         :weight 'light)
     (set-face-attribute 'face-subtle nil :background "#4f4f4f")
     (set-modeline-faces)
@@ -423,9 +424,9 @@ function is a convenience wrapper used by `describe-package-1'."
                            text (concat "[" text "]")))
           (button-face (if (display-graphic-p)
                            '(:box `(:line-width 1
-                             :color "#999999":style nil)
-                            :foreground "#999999"
-                            :background "#F0F0F0")
+                                    :color "#999999":style nil)
+                             :foreground "#999999"
+                             :background "#F0F0F0")
                          'link)))
       (apply #'insert-text-button button-text
              'face button-face 'follow-link t properties)))
@@ -494,7 +495,7 @@ function is a convenience wrapper used by `describe-package-1'."
   (set-face 'org-agenda-filter-effort                     'face-faded)
   (set-face 'org-agenda-filter-regexp                     'face-faded)
   (set-face 'org-agenda-filter-tags                       'face-faded)
-  (set-face 'org-agenda-property-face                     'face-faded)
+  ;; (set-face 'org-agenda-property-face                     'face-faded)
   (set-face 'org-agenda-restriction-lock                  'face-faded)
   (set-face 'org-agenda-structure                        'face-faded))
 

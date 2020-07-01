@@ -34,5 +34,6 @@ instructions that you are now to perform the operation (if you can) of
 totalling up  all the little  bits that  are indicated by  the symbols
 that follow. That's all.
 
+
                             /Calculus Made Easy by Silvanus P. Thompson/
                                      /What one fool can do, another can/.
