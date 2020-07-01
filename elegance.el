@@ -21,6 +21,9 @@
 
 ;; Only necessary for the splash screen mockup
 ;; -------------------------------------------------------------------
+;;
+;;; Code:
+
 (with-eval-after-load 'org
   (setq org-display-inline-images t)
   (setq org-redisplay-inline-images t)
@@ -603,3 +606,4 @@ function is a convenience wrapper used by `describe-package-1'."
 
 (provide 'elegance)
 
+;; elegance.el ends here
