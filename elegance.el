@@ -27,7 +27,6 @@
   (setq org-startup-with-inline-images "inlineimages")
   (setq org-hide-emphasis-markers t)
   (setq org-confirm-elisp-link-function nil)
-  (setq org-ellipsis " …")
   (setq org-link-frame-setup '((file . find-file))))
 ;; -------------------------------------------------------------------
 
@@ -59,7 +58,7 @@
 (setq visible-bell t)
 (setq ring-bell-function 'ignore)
 
-;; No tootlips
+;; No Tooltips
 (tooltip-mode 0)
 
 ;; Paren mode is part of the theme
@@ -73,6 +72,8 @@
                         (make-glyph-code ?… 'fallback))
 (set-display-table-slot standard-display-table 'wrap
                         (make-glyph-code ?↩ 'fallback))
+(set-display-table-slot standard-display-table 'selective-display
+                        (string-to-vector " …"))
 
 
 ;; When we set a face, we take care of removing any previous settings
